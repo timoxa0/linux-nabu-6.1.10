@@ -877,6 +877,7 @@
 		reset-gpios = <&tlmm 6 GPIO_ACTIVE_LOW>;
 
 		vddio-supply = <&vreg_l14a_1p88>;
+    rotation = <90>;
 
 		#address-cells = <1>;
 		#size-cells = <0>;
