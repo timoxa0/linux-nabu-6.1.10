@@ -1,0 +1,980 @@
+// SPDX-License-Identifier: GPL-2.0-only
+/*
+ * An export of masked symbols, so the dtbo gets successfully gets applied to
+ * nothing
+ *
+ * Copyright (c) 2024, timoxa0. All rights reserved.
+ */
+
+/ {
+  __symbols__ {
+    display_panel_enp_default = "/masked-devices/display_panel_enp_default";
+    display_panel_enn_default = "/masked-devices/display_panel_enn_default";
+    qupv3_se18_spi_pins = "/masked-devices/qupv3_se18_spi_pins";
+    qupv3_se18_spi_active = "/masked-devices/qupv3_se18_spi_active";
+    qupv3_se18_spi_sleep = "/masked-devices/qupv3_se18_spi_sleep";
+    bq2597x_master_int_default = "/masked-devices/bq2597x_master_int_default";
+    bq2597x_master_int_suspend = "/masked-devices/bq2597x_master_int_suspend";
+    onewire_gpio_active = "/masked-devices/onewire_gpio_active";
+    onewire_gpio_sleep = "/masked-devices/onewire_gpio_sleep";
+    onewire_gpio_slave_active = "/masked-devices/onewire_gpio_slave_active";
+    onewire_gpio_slave_sleep = "/masked-devices/onewire_gpio_slave_sleep";
+    ts_active = "/masked-devices/ts_active";
+    ts_int_suspend = "/masked-devices/ts_int_suspend";
+    ts_reset_suspend = "/masked-devices/ts_reset_suspend";
+    adc2_switch_gpio_idle = "/masked-devices/adc2_switch_gpio_idle";
+    adc2_switch_gpio_active = "/masked-devices/adc2_switch_gpio_active";
+    hall_intr3_active = "/masked-devices/hall_intr3_active";
+    hall_intr3_suspend = "/masked-devices/hall_intr3_suspend";
+    hall_intr4_active = "/masked-devices/hall_intr4_active";
+    hall_intr4_suspend = "/masked-devices/hall_intr4_suspend";
+    idt_int_active = "/masked-devices/idt_int_active";
+    idt_int_suspend = "/masked-devices/idt_int_suspend";
+    txon_enable_active = "/masked-devices/txon_enable_active";
+    txon_enable_suspend = "/masked-devices/txon_enable_suspend";
+    power_good_active = "/masked-devices/power_good_active";
+    power_good_suspend = "/masked-devices/power_good_suspend";
+    reverse_booset_enable_active = "/masked-devices/reverse_booset_enable_active";
+    reverse_booset_enable_suspend = "/masked-devices/reverse_booset_enable_suspend";
+    sbu_uart_en_idle = "/masked-devices/sbu_uart_en_idle";
+    sbu_uart_en_active = "/masked-devices/sbu_uart_en_active";
+    pcie1_wake_default = "/masked-devices/pcie1_wake_default";
+    nfc_int_active = "/masked-devices/nfc_int_active";
+    nfc_int_suspend = "/masked-devices/nfc_int_suspend";
+    nfc_enable_active = "/masked-devices/nfc_enable_active";
+    nfc_enable_suspend = "/masked-devices/nfc_enable_suspend";
+    nfc_clk_req_active = "/masked-devices/nfc_clk_req_active";
+    nfc_clk_req_suspend = "/masked-devices/nfc_clk_req_suspend";
+    cam_sensor_active_macro = "/masked-devices/cam_sensor_active_macro";
+    cam_sensor_suspend_macro = "/masked-devices/cam_sensor_suspend_macro";
+    ant_sub_ctrl_irq = "/masked-devices/ant_sub_ctrl_irq";
+    ant_top_ctrl_irq = "/masked-devices/ant_top_ctrl_irq";
+    xiaomi_keyboard_suspend = "/masked-devices/xiaomi_keyboard_suspend";
+    xiaomi_keyboard_active = "/masked-devices/xiaomi_keyboard_active";
+    pm8150_tz = "/masked-devices/pm8150_tz";
+    pm8150_clkdiv = "/masked-devices/pm8150_clkdiv";
+    pm8150_rtc = "/masked-devices/pm8150_rtc";
+    pm8150_gpios = "/masked-devices/pm8150_gpios";
+    key_home_default = "/masked-devices/key_home_default";
+    key_vol_up_default = "/masked-devices/key_vol_up_default";
+    usb2_vbus_boost_default = "/masked-devices/usb2_vbus_boost_default";
+    usb2_vbus_det_default = "/masked-devices/usb2_vbus_det_default";
+    pm8150_sdam_2 = "/masked-devices/pm8150_sdam_2";
+    pm8150_vadc = "/masked-devices/pm8150_vadc";
+    pm8150_adc_tm = "/masked-devices/pm8150_adc_tm";
+    pm8150_temp_alarm = "/masked-devices/pm8150_temp_alarm";
+    pm8150_trip0 = "/masked-devices/pm8150_trip0";
+    pm8150_trip1 = "/masked-devices/pm8150_trip1";
+    pm8150b_revid = "/masked-devices/pm8150b_revid";
+    pm8150b_tz = "/masked-devices/pm8150b_tz";
+    pm8150b_clkdiv = "/masked-devices/pm8150b_clkdiv";
+    pm8150b_pbs1 = "/masked-devices/pm8150b_pbs1";
+    pm8150b_qnovo = "/masked-devices/pm8150b_qnovo";
+    pm8150b_gpios = "/masked-devices/pm8150b_gpios";
+    smb_stat_default = "/masked-devices/smb_stat_default";
+    qnovo_fet_ctrl_state1 = "/masked-devices/qnovo_fet_ctrl_state1";
+    qnovo_fet_ctrl_state2 = "/masked-devices/qnovo_fet_ctrl_state2";
+    otg_vbus_boost_default = "/masked-devices/otg_vbus_boost_default";
+    power_good_default = "/masked-devices/power_good_default";
+    pm8150b_vadc = "/masked-devices/pm8150b_vadc";
+    pm8150b_adc_tm = "/masked-devices/pm8150b_adc_tm";
+    pm8150b_charger = "/masked-devices/pm8150b_charger";
+    smb5_vconn = "/masked-devices/smb5_vconn";
+    smb5_vbus = "/masked-devices/smb5_vbus";
+    pm8150b_pdphy = "/masked-devices/pm8150b_pdphy";
+    pm8150b_bcl = "/masked-devices/pm8150b_bcl";
+    bcl_soc = "/masked-devices/bcl_soc";
+    pm8150b_fg = "/masked-devices/pm8150b_fg";
+    pm8150b_pwm = "/masked-devices/pm8150b_pwm";
+    pm8150b_hr_led = "/masked-devices/pm8150b_hr_led";
+    pm8150b_haptics = "/masked-devices/pm8150b_haptics";
+    pm8150b_temp_alarm = "/masked-devices/pm8150b_temp_alarm";
+    pm8150b_trip0 = "/masked-devices/pm8150b_trip0";
+    pm8150b_trip1 = "/masked-devices/pm8150b_trip1";
+    ibat_lvl0 = "/masked-devices/ibat_lvl0";
+    ibat_lvl1 = "/masked-devices/ibat_lvl1";
+    vbat_lvl0 = "/masked-devices/vbat_lvl0";
+    vbat_lvl1 = "/masked-devices/vbat_lvl1";
+    vbat_lvl2 = "/masked-devices/vbat_lvl2";
+    b_bcl_lvl0 = "/masked-devices/b_bcl_lvl0";
+    b_bcl_lvl1 = "/masked-devices/b_bcl_lvl1";
+    b_bcl_lvl2 = "/masked-devices/b_bcl_lvl2";
+    soc_trip = "/masked-devices/soc_trip";
+    pm8150l_revid = "/masked-devices/pm8150l_revid";
+    pm8150l_tz = "/masked-devices/pm8150l_tz";
+    pm8150l_clkdiv = "/masked-devices/pm8150l_clkdiv";
+    pm8150l_gpios = "/masked-devices/pm8150l_gpios";
+    cam_sensor_eldo4_default = "/masked-devices/cam_sensor_eldo4_default";
+    cam_sensor_eldo3_default = "/masked-devices/cam_sensor_eldo3_default";
+    pm8150l_backlight_therm_default = "/masked-devices/pm8150l_backlight_therm_default";
+    cam_sensor_wide_vdig_enable = "/masked-devices/cam_sensor_wide_vdig_enable";
+    cam_sensor_wide_vdig_disable = "/masked-devices/cam_sensor_wide_vdig_disable";
+    pm8150l_vadc = "/masked-devices/pm8150l_vadc";
+    pm8150l_bcl = "/masked-devices/pm8150l_bcl";
+    pm8150l_adc_tm = "/masked-devices/pm8150l_adc_tm";
+    pm8150l_lcdb = "/masked-devices/pm8150l_lcdb";
+    lcdb_ldo_vreg = "/masked-devices/lcdb_ldo_vreg";
+    lcdb_ncp_vreg = "/masked-devices/lcdb_ncp_vreg";
+    lcdb_bst_vreg = "/masked-devices/lcdb_bst_vreg";
+    flash_led = "/masked-devices/flash_led";
+    pm8150l_flash0 = "/masked-devices/pm8150l_flash0";
+    pm8150l_flash1 = "/masked-devices/pm8150l_flash1";
+    pm8150l_flash2 = "/masked-devices/pm8150l_flash2";
+    pm8150l_torch0 = "/masked-devices/pm8150l_torch0";
+    pm8150l_torch1 = "/masked-devices/pm8150l_torch1";
+    pm8150l_torch2 = "/masked-devices/pm8150l_torch2";
+    pm8150l_switch0 = "/masked-devices/pm8150l_switch0";
+    pm8150l_switch1 = "/masked-devices/pm8150l_switch1";
+    pm8150l_switch2 = "/masked-devices/pm8150l_switch2";
+    pm8150l_flashlight = "/masked-devices/pm8150l_flashlight";
+    pm8150l_wled = "/masked-devices/pm8150l_wled";
+    wled_flash = "/masked-devices/wled_flash";
+    wled_torch = "/masked-devices/wled_torch";
+    wled_switch = "/masked-devices/wled_switch";
+    pm8150l_lpg = "/masked-devices/pm8150l_lpg";
+    pwm_lpg1 = "/masked-devices/pwm_lpg1";
+    pwm_lpg2 = "/masked-devices/pwm_lpg2";
+    pwm_lpg3 = "/masked-devices/pwm_lpg3";
+    pm8150l_pwm = "/masked-devices/pm8150l_pwm";
+    pm8150l_rgb_led = "/masked-devices/pm8150l_rgb_led";
+    red_led = "/masked-devices/red_led";
+    green_led = "/masked-devices/green_led";
+    blue_led = "/masked-devices/blue_led";
+    pm8150a_amoled = "/masked-devices/pm8150a_amoled";
+    oledb_vreg = "/masked-devices/oledb_vreg";
+    ab_vreg = "/masked-devices/ab_vreg";
+    ibb_vreg = "/masked-devices/ibb_vreg";
+    pm8150l_temp_alarm = "/masked-devices/pm8150l_temp_alarm";
+    vph_lvl0 = "/masked-devices/vph_lvl0";
+    vph_lvl1 = "/masked-devices/vph_lvl1";
+    vph_lvl2 = "/masked-devices/vph_lvl2";
+    l_bcl_lvl0 = "/masked-devices/l_bcl_lvl0";
+    l_bcl_lvl1 = "/masked-devices/l_bcl_lvl1";
+    l_bcl_lvl2 = "/masked-devices/l_bcl_lvl2";
+    dsi_sim_vid = "/masked-devices/dsi_sim_vid";
+    dsi_sim_cmd = "/masked-devices/dsi_sim_cmd";
+    dsi_sim_dsc_375_cmd = "/masked-devices/dsi_sim_dsc_375_cmd";
+    dsi_dual_sim_vid = "/masked-devices/dsi_dual_sim_vid";
+    dsi_dual_sim_cmd = "/masked-devices/dsi_dual_sim_cmd";
+    dsi_dual_sim_dsc_375_cmd = "/masked-devices/dsi_dual_sim_dsc_375_cmd";
+    dsi_sim_sec_hd_cmd = "/masked-devices/dsi_sim_sec_hd_cmd";
+    dsi_sharp_4k_dsc_video = "/masked-devices/dsi_sharp_4k_dsc_video";
+    dsi_sharp_4k_dsc_cmd = "/masked-devices/dsi_sharp_4k_dsc_cmd";
+    dsi_dual_nt35597_truly_video = "/masked-devices/dsi_dual_nt35597_truly_video";
+    dsi_dual_nt35597_truly_video_config0 = "/masked-devices/dsi_dual_nt35597_truly_video_config0";
+    dsi_dual_nt35597_truly_cmd = "/masked-devices/dsi_dual_nt35597_truly_cmd";
+    dsi_nt35597_truly_dsc_cmd = "/masked-devices/dsi_nt35597_truly_dsc_cmd";
+    dsi_nt35597_truly_dsc_cmd_config2 = "/masked-devices/dsi_nt35597_truly_dsc_cmd_config2";
+    dsi_nt35597_truly_dsc_video = "/masked-devices/dsi_nt35597_truly_dsc_video";
+    dsi_nt35597_truly_dsc_video_config2 = "/masked-devices/dsi_nt35597_truly_dsc_video_config2";
+    dsi_nt36860_dsc_video = "/masked-devices/dsi_nt36860_dsc_video";
+    dsi_nt36860_dsc_cmd = "/masked-devices/dsi_nt36860_dsc_cmd";
+    dsi_nt35695b_truly_fhd_video = "/masked-devices/dsi_nt35695b_truly_fhd_video";
+    dsi_nt35695b_truly_fhd_cmd = "/masked-devices/dsi_nt35695b_truly_fhd_cmd";
+    dsi_sharp_1080_cmd = "/masked-devices/dsi_sharp_1080_cmd";
+    dsi_dual_sharp_1080_120hz_cmd = "/masked-devices/dsi_dual_sharp_1080_120hz_cmd";
+    dsi_dual_s6e3ha3_amoled_cmd = "/masked-devices/dsi_dual_s6e3ha3_amoled_cmd";
+    dsi_sw43404_amoled_cmd = "/masked-devices/dsi_sw43404_amoled_cmd";
+    dsi_ss_notch_fhd_ea8074_cmd = "/masked-devices/dsi_ss_notch_fhd_ea8074_cmd";
+    dsi_sw43404_amoled_video = "/masked-devices/dsi_sw43404_amoled_video";
+    dsi_sw43404_amoled_fhd_plus_cmd = "/masked-devices/dsi_sw43404_amoled_fhd_plus_cmd";
+    dsi_samsung_fhd_ea8076_cmd = "/masked-devices/dsi_samsung_fhd_ea8076_cmd";
+    dsi_samsung_fhd_ea8076_f1_cmd = "/masked-devices/dsi_samsung_fhd_ea8076_f1_cmd";
+    dsi_samsung_fhd_ea8076_f1p2_cmd = "/masked-devices/dsi_samsung_fhd_ea8076_f1p2_cmd";
+    dsi_samsung_fhd_ea8076_f1p2_2_cmd = "/masked-devices/dsi_samsung_fhd_ea8076_f1p2_2_cmd";
+    dsi_samsung_fhd_ea8076_f1mp_cmd = "/masked-devices/dsi_samsung_fhd_ea8076_f1mp_cmd";
+    dsi_tianma_fhd_nt36672a_video = "/masked-devices/dsi_tianma_fhd_nt36672a_video";
+    dsi_dual_nt36850_truly_cmd = "/masked-devices/dsi_dual_nt36850_truly_cmd";
+    dsi_rm69299_visionox_amoled_video = "/masked-devices/dsi_rm69299_visionox_amoled_video";
+    dsi_ss_fhd_ea8076_cmd = "/masked-devices/dsi_ss_fhd_ea8076_cmd";
+    dsi_ss_fhd_ea8076_global_cmd = "/masked-devices/dsi_ss_fhd_ea8076_global_cmd";
+    dsi_visionox_fhd_r66456_f11_cmd = "/masked-devices/dsi_visionox_fhd_r66456_f11_cmd";
+    dsi_samsung_fhd_ea8076_f1s_cmd = "/masked-devices/dsi_samsung_fhd_ea8076_f1s_cmd";
+    dsi_j2a_38_0c_0a_dsc_cmd = "/masked-devices/dsi_j2a_38_0c_0a_dsc_cmd";
+    dsi_j2a_42_02_0b_dsc_cmd = "/masked-devices/dsi_j2a_42_02_0b_dsc_cmd";
+    dsi_j20s_36_02_0a_video = "/masked-devices/dsi_j20s_36_02_0a_video";
+    dsi_j20s_42_02_0b_video = "/masked-devices/dsi_j20s_42_02_0b_video";
+    dsi_k82_42_02_0a_dual_cphy_video = "/masked-devices/dsi_k82_42_02_0a_dual_cphy_video";
+    dsi_k82_36_02_0b_dual_cphy_video = "/masked-devices/dsi_k82_36_02_0b_dual_cphy_video";
+    dsi_panel_pwr_supply = "/masked-devices/dsi_panel_pwr_supply";
+    dsi_panel_pwr_supply_no_labibb = "/masked-devices/dsi_panel_pwr_supply_no_labibb";
+    dsi_panel_pwr_supply_vdd_no_labibb = "/masked-devices/dsi_panel_pwr_supply_vdd_no_labibb";
+    dsi_panel_pwr_supply_vdd_labibb = "/masked-devices/dsi_panel_pwr_supply_vdd_labibb";
+    dsi_amoled_panel_pwr_supply = "/masked-devices/dsi_amoled_panel_pwr_supply";
+    dsi_amoled_panel_pwr_external_supply = "/masked-devices/dsi_amoled_panel_pwr_external_supply";
+    dsi_panel_pwr_supply_k82_vddio = "/masked-devices/dsi_panel_pwr_supply_k82_vddio";
+    dsi_sharp_4k_dsc_video_display = "/masked-devices/dsi_sharp_4k_dsc_video_display";
+    dsi_sharp_4k_dsc_cmd_display = "/masked-devices/dsi_sharp_4k_dsc_cmd_display";
+    dsi_sharp_1080_cmd_display = "/masked-devices/dsi_sharp_1080_cmd_display";
+    dsi_dual_sharp_1080_120hz_cmd_display = "/masked-devices/dsi_dual_sharp_1080_120hz_cmd_display";
+    dsi_dual_nt35597_truly_video_display = "/masked-devices/dsi_dual_nt35597_truly_video_display";
+    dsi_dual_nt35597_truly_cmd_display = "/masked-devices/dsi_dual_nt35597_truly_cmd_display";
+    dsi_nt35597_truly_dsc_cmd_display = "/masked-devices/dsi_nt35597_truly_dsc_cmd_display";
+    dsi_nt35597_truly_dsc_video_display = "/masked-devices/dsi_nt35597_truly_dsc_video_display";
+    dsi_sim_vid_display = "/masked-devices/dsi_sim_vid_display";
+    dsi_dual_sim_vid_display = "/masked-devices/dsi_dual_sim_vid_display";
+    dsi_sim_cmd_display = "/masked-devices/dsi_sim_cmd_display";
+    dsi_dual_sim_cmd_display = "/masked-devices/dsi_dual_sim_cmd_display";
+    dsi_sim_dsc_375_cmd_display = "/masked-devices/dsi_sim_dsc_375_cmd_display";
+    dsi_dual_sim_dsc_375_cmd_display = "/masked-devices/dsi_dual_sim_dsc_375_cmd_display";
+    dsi_sw43404_amoled_cmd_display = "/masked-devices/dsi_sw43404_amoled_cmd_display";
+    dsi_nt35695b_truly_fhd_cmd_display = "/masked-devices/dsi_nt35695b_truly_fhd_cmd_display";
+    dsi_nt35695b_truly_fhd_video_display = "/masked-devices/dsi_nt35695b_truly_fhd_video_display";
+    dsi_sw43404_amoled_video_display = "/masked-devices/dsi_sw43404_amoled_video_display";
+    dsi_sw43404_amoled_fhd_plus_cmd_display = "/masked-devices/dsi_sw43404_amoled_fhd_plus_cmd_display";
+    dsi_ss_ea8074_fhd_cmd_display = "/masked-devices/dsi_ss_ea8074_fhd_cmd_display";
+    dsi_samsung_fhd_ea8076_cmd_display = "/masked-devices/dsi_samsung_fhd_ea8076_cmd_display";
+    dsi_samsung_fhd_ea8076_f1_cmd_display = "/masked-devices/dsi_samsung_fhd_ea8076_f1_cmd_display";
+    dsi_samsung_fhd_ea8076_f1mp_cmd_display = "/masked-devices/dsi_samsung_fhd_ea8076_f1mp_cmd_display";
+    dsi_samsung_fhd_ea8076_f1p2_2_cmd_display = "/masked-devices/dsi_samsung_fhd_ea8076_f1p2_2_cmd_display";
+    dsi_samsung_fhd_ea8076_f1p2_cmd_display = "/masked-devices/dsi_samsung_fhd_ea8076_f1p2_cmd_display";
+    dsi_tianma_fhd_nt36672a_video_display = "/masked-devices/dsi_tianma_fhd_nt36672a_video_display";
+    dsi_dual_nt36850_truly_cmd_display = "/masked-devices/dsi_dual_nt36850_truly_cmd_display";
+    dsi_nt35695b_truly_fhd_cmd_sec_display = "/masked-devices/dsi_nt35695b_truly_fhd_cmd_sec_display";
+    dsi_nt35695b_truly_fhd_video_sec_display = "/masked-devices/dsi_nt35695b_truly_fhd_video_sec_display";
+    dsi_sim_sec_hd_cmd_display = "/masked-devices/dsi_sim_sec_hd_cmd_display";
+    dsi_ss_fhd_ea8076_cmd_display = "/masked-devices/dsi_ss_fhd_ea8076_cmd_display";
+    dsi_visionox_fhd_r66456_f11_cmd_display = "/masked-devices/dsi_visionox_fhd_r66456_f11_cmd_display";
+    dsi_ss_fhd_ea8076_global_cmd_display = "/masked-devices/dsi_ss_fhd_ea8076_global_cmd_display";
+    dsi_samsung_fhd_ea8076_f1s_cmd_display = "/masked-devices/dsi_samsung_fhd_ea8076_f1s_cmd_display";
+    dsi_j2a_38_0c_0a_dsc_cmd_display = "/masked-devices/dsi_j2a_38_0c_0a_dsc_cmd_display";
+    dsi_j2a_42_02_0b_dsc_cmd_display = "/masked-devices/dsi_j2a_42_02_0b_dsc_cmd_display";
+    dsi_j20s_36_02_0a_video_display = "/masked-devices/dsi_j20s_36_02_0a_video_display";
+    dsi_j20s_42_02_0b_video_display = "/masked-devices/dsi_j20s_42_02_0b_video_display";
+    dsi_rm69299_visionox_amoled_vid_display = "/masked-devices/dsi_rm69299_visionox_amoled_vid_display";
+    dsi_k82_42_02_0a_dual_cphy_vid_display = "/masked-devices/dsi_k82_42_02_0a_dual_cphy_vid_display";
+    dsi_nt36860_dsc_video_display = "/masked-devices/dsi_nt36860_dsc_video_display";
+    dsi_nt36860_dsc_cmd_display = "/masked-devices/dsi_nt36860_dsc_cmd_display";
+    dsi_k82_36_02_0b_dual_cphy_vid_display = "/masked-devices/dsi_k82_36_02_0b_dual_cphy_vid_display";
+    sde_dsi = "/masked-devices/sde_dsi";
+    sde_dsi1 = "/masked-devices/sde_dsi1";
+    sde_wb = "/masked-devices/sde_wb";
+    ext_disp = "/masked-devices/ext_disp";
+    ext_disp_audio_codec = "/masked-devices/ext_disp_audio_codec";
+    bluetooth = "/masked-devices/bluetooth";
+    extcon_usb1 = "/masked-devices/extcon_usb1";
+    ext_5v_boost = "/masked-devices/ext_5v_boost";
+    wdog = "/masked-devices/wdog";
+    ramdump_fb_mem = "/masked-devices/ramdump_fb_mem";
+    led_flash_rear = "/masked-devices/led_flash_rear";
+    actuator_rear_regulator = "/masked-devices/actuator_rear_regulator";
+    camera_wide_vdig_ldo = "/masked-devices/camera_wide_vdig_ldo";
+    camera_front_vdig_ldo = "/masked-devices/camera_front_vdig_ldo";
+    actuator_rear = "/masked-devices/actuator_rear";
+    eeprom_rear = "/masked-devices/eeprom_rear";
+    eeprom_front = "/masked-devices/eeprom_front";
+    smb1390 = "/masked-devices/smb1390";
+    smb1390_revid = "/masked-devices/smb1390_revid";
+    smb1390_charger = "/masked-devices/smb1390_charger";
+    smb1390_slave = "/masked-devices/smb1390_slave";
+    smb1390_slave_charger = "/masked-devices/smb1390_slave_charger";
+    idtp9418 = "/masked-devices/idtp9418";
+    ipa_hw = "/masked-devices/ipa_hw";
+    onewire_gpio = "/masked-devices/onewire_gpio";
+    onewire_slave_gpio = "/masked-devices/onewire_slave_gpio";
+    nabu_batterydata = "/masked-devices/nabu_batterydata";
+    maxim_ds28e16 = "/masked-devices/maxim_ds28e16";
+    maxim_ds28e16_slave = "/masked-devices/maxim_ds28e16_slave";
+    touch_vddio_vreg = "/masked-devices/touch_vddio_vreg";
+    vdd_boost_vreg = "/masked-devices/vdd_boost_vreg";
+    display_panel_enp = "/masked-devices/display_panel_enp";
+    display_panel_enn = "/masked-devices/display_panel_enn";
+    ts_int_active = "/masked-devices/ts_int_active";
+    ts_cs_active = "/masked-devices/ts_cs_active";
+    ts_cs_suspend = "/masked-devices/ts_cs_suspend";
+    ssc_sensors = "/masked-devices/ssc_sensors";
+    thermal_message = "/masked-devices/thermal_message";
+    msm_gpio_37 = "/masked-devices/msm_gpio_37";
+    msm_gpio_37_output_high = "/masked-devices/msm_gpio_37_output_high";
+    msm_gpio_120 = "/masked-devices/msm_gpio_120";
+    tavil_wcd = "/masked-devices/tavil_wcd";
+    us_euro_sw_active = "/masked-devices/us_euro_sw_active";
+    us_euro_sw_sleep = "/masked-devices/us_euro_sw_sleep";
+    spk_1_wcd_en_active = "/masked-devices/spk_1_wcd_en_active";
+    spk_1_wcd_en_sleep = "/masked-devices/spk_1_wcd_en_sleep";
+    spk_2_wcd_en_active = "/masked-devices/spk_2_wcd_en_active";
+    spk_2_wcd_en_sleep = "/masked-devices/spk_2_wcd_en_sleep";
+    hph_en0_wcd_active = "/masked-devices/hph_en0_wcd_active";
+    hph_en0_wcd_sleep = "/masked-devices/hph_en0_wcd_sleep";
+    hph_en1_wcd_active = "/masked-devices/hph_en1_wcd_active";
+    hph_en1_wcd_sleep = "/masked-devices/hph_en1_wcd_sleep";
+    wsa_spk_wcd_sd1 = "/masked-devices/wsa_spk_wcd_sd1";
+    wsa_spk_wcd_sd2 = "/masked-devices/wsa_spk_wcd_sd2";
+    tavil_us_euro_switch = "/masked-devices/tavil_us_euro_switch";
+    tavil_hph_en0 = "/masked-devices/tavil_hph_en0";
+    tavil_hph_en1 = "/masked-devices/tavil_hph_en1";
+    wcd = "/masked-devices/wcd";
+    spkr_1_wcd_en_active = "/masked-devices/spkr_1_wcd_en_active";
+    spkr_1_wcd_en_sleep = "/masked-devices/spkr_1_wcd_en_sleep";
+    spkr_2_wcd_en_active = "/masked-devices/spkr_2_wcd_en_active";
+    spkr_2_wcd_en_sleep = "/masked-devices/spkr_2_wcd_en_sleep";
+    wsa_spkr_wcd_sd1 = "/masked-devices/wsa_spkr_wcd_sd1";
+    wsa_spkr_wcd_sd2 = "/masked-devices/wsa_spkr_wcd_sd2";
+    wsa881x_0211 = "/masked-devices/wsa881x_0211";
+    wsa881x_0212 = "/masked-devices/wsa881x_0212";
+    wsa881x_0213 = "/masked-devices/wsa881x_0213";
+    wsa881x_0214 = "/masked-devices/wsa881x_0214";
+    wsa881x_70211 = "/masked-devices/wsa881x_70211";
+    wsa881x_70212 = "/masked-devices/wsa881x_70212";
+    wsa881x_70213 = "/masked-devices/wsa881x_70213";
+    wsa881x_70214 = "/masked-devices/wsa881x_70214";
+    wcd9xxx_intc = "/masked-devices/wcd9xxx_intc";
+    clock_audio = "/masked-devices/clock_audio";
+    wcd_rst_gpio = "/masked-devices/wcd_rst_gpio";
+    pahu_wdsp = "/masked-devices/pahu_wdsp";
+    tavil_wdsp = "/masked-devices/tavil_wdsp";
+    clock_audio_lnbb = "/masked-devices/clock_audio_lnbb";
+    wcd9360_cdc = "/masked-devices/wcd9360_cdc";
+    wcd_spi_0 = "/masked-devices/wcd_spi_0";
+    wcd934x_cdc = "/masked-devices/wcd934x_cdc";
+    tavil_spi_0 = "/masked-devices/tavil_spi_0";
+    aqt1000_cdc = "/masked-devices/aqt1000_cdc";
+  };
+  masked-devices {
+	  masked = <&_masked_display_panel_enp_default>,
+      <&_masked_display_panel_enn_default>,
+      <&_masked_qupv3_se18_spi_pins>,
+      <&_masked_qupv3_se18_spi_active>,
+      <&_masked_qupv3_se18_spi_sleep>,
+      <&_masked_bq2597x_master_int_default>,
+      <&_masked_bq2597x_master_int_suspend>,
+      <&_masked_onewire_gpio_active>,
+      <&_masked_onewire_gpio_sleep>,
+      <&_masked_onewire_gpio_slave_active>,
+      <&_masked_onewire_gpio_slave_sleep>,
+      <&_masked_ts_active>,
+      <&_masked_ts_int_suspend>,
+      <&_masked_ts_reset_suspend>,
+      <&_masked_adc2_switch_gpio_idle>,
+      <&_masked_adc2_switch_gpio_active>,
+      <&_masked_hall_intr3_active>,
+      <&_masked_hall_intr3_suspend>,
+      <&_masked_hall_intr4_active>,
+      <&_masked_hall_intr4_suspend>,
+      <&_masked_idt_int_active>,
+      <&_masked_idt_int_suspend>,
+      <&_masked_txon_enable_active>,
+      <&_masked_txon_enable_suspend>,
+      <&_masked_power_good_active>,
+      <&_masked_power_good_suspend>,
+      <&_masked_reverse_booset_enable_active>,
+      <&_masked_reverse_booset_enable_suspend>,
+      <&_masked_sbu_uart_en_idle>,
+      <&_masked_sbu_uart_en_active>,
+      <&_masked_pcie1_wake_default>,
+      <&_masked_nfc_int_active>,
+      <&_masked_nfc_int_suspend>,
+      <&_masked_nfc_enable_active>,
+      <&_masked_nfc_enable_suspend>,
+      <&_masked_nfc_clk_req_active>,
+      <&_masked_nfc_clk_req_suspend>,
+      <&_masked_cam_sensor_active_macro>,
+      <&_masked_cam_sensor_suspend_macro>,
+      <&_masked_ant_sub_ctrl_irq>,
+      <&_masked_ant_top_ctrl_irq>,
+      <&_masked_xiaomi_keyboard_suspend>,
+      <&_masked_xiaomi_keyboard_active>,
+      <&_masked_pm8150_tz>,
+      <&_masked_pm8150_clkdiv>,
+      <&_masked_pm8150_rtc>,
+      <&_masked_pm8150_gpios>,
+      <&_masked_key_home_default>,
+      <&_masked_key_vol_up_default>,
+      <&_masked_usb2_vbus_boost_default>,
+      <&_masked_usb2_vbus_det_default>,
+      <&_masked_pm8150_sdam_2>,
+      <&_masked_pm8150_vadc>,
+      <&_masked_pm8150_adc_tm>,
+      <&_masked_pm8150_temp_alarm>,
+      <&_masked_pm8150_trip0>,
+      <&_masked_pm8150_trip1>,
+      <&_masked_pm8150b_revid>,
+      <&_masked_pm8150b_tz>,
+      <&_masked_pm8150b_clkdiv>,
+      <&_masked_pm8150b_pbs1>,
+      <&_masked_pm8150b_qnovo>,
+      <&_masked_pm8150b_gpios>,
+      <&_masked_smb_stat_default>,
+      <&_masked_qnovo_fet_ctrl_state1>,
+      <&_masked_qnovo_fet_ctrl_state2>,
+      <&_masked_otg_vbus_boost_default>,
+      <&_masked_power_good_default>,
+      <&_masked_pm8150b_vadc>,
+      <&_masked_pm8150b_adc_tm>,
+      <&_masked_pm8150b_charger>,
+      <&_masked_smb5_vconn>,
+      <&_masked_smb5_vbus>,
+      <&_masked_pm8150b_pdphy>,
+      <&_masked_pm8150b_bcl>,
+      <&_masked_bcl_soc>,
+      <&_masked_pm8150b_fg>,
+      <&_masked_pm8150b_pwm>,
+      <&_masked_pm8150b_hr_led>,
+      <&_masked_pm8150b_haptics>,
+      <&_masked_pm8150b_temp_alarm>,
+      <&_masked_pm8150b_trip0>,
+      <&_masked_pm8150b_trip1>,
+      <&_masked_ibat_lvl0>,
+      <&_masked_ibat_lvl1>,
+      <&_masked_vbat_lvl0>,
+      <&_masked_vbat_lvl1>,
+      <&_masked_vbat_lvl2>,
+      <&_masked_b_bcl_lvl0>,
+      <&_masked_b_bcl_lvl1>,
+      <&_masked_b_bcl_lvl2>,
+      <&_masked_soc_trip>,
+      <&_masked_pm8150l_revid>,
+      <&_masked_pm8150l_tz>,
+      <&_masked_pm8150l_clkdiv>,
+      <&_masked_pm8150l_gpios>,
+      <&_masked_cam_sensor_eldo4_default>,
+      <&_masked_cam_sensor_eldo3_default>,
+      <&_masked_pm8150l_backlight_therm_default>,
+      <&_masked_cam_sensor_wide_vdig_enable>,
+      <&_masked_cam_sensor_wide_vdig_disable>,
+      <&_masked_pm8150l_vadc>,
+      <&_masked_pm8150l_bcl>,
+      <&_masked_pm8150l_adc_tm>,
+      <&_masked_pm8150l_lcdb>,
+      <&_masked_lcdb_ldo_vreg>,
+      <&_masked_lcdb_ncp_vreg>,
+      <&_masked_lcdb_bst_vreg>,
+      <&_masked_flash_led>,
+      <&_masked_pm8150l_flash0>,
+      <&_masked_pm8150l_flash1>,
+      <&_masked_pm8150l_flash2>,
+      <&_masked_pm8150l_torch0>,
+      <&_masked_pm8150l_torch1>,
+      <&_masked_pm8150l_torch2>,
+      <&_masked_pm8150l_switch0>,
+      <&_masked_pm8150l_switch1>,
+      <&_masked_pm8150l_switch2>,
+      <&_masked_pm8150l_flashlight>,
+      <&_masked_pm8150l_wled>,
+      <&_masked_wled_flash>,
+      <&_masked_wled_torch>,
+      <&_masked_wled_switch>,
+      <&_masked_pm8150l_lpg>,
+      <&_masked_pwm_lpg1>,
+      <&_masked_pwm_lpg2>,
+      <&_masked_pwm_lpg3>,
+      <&_masked_pm8150l_pwm>,
+      <&_masked_pm8150l_rgb_led>,
+      <&_masked_red_led>,
+      <&_masked_green_led>,
+      <&_masked_blue_led>,
+      <&_masked_pm8150a_amoled>,
+      <&_masked_oledb_vreg>,
+      <&_masked_ab_vreg>,
+      <&_masked_ibb_vreg>,
+      <&_masked_pm8150l_temp_alarm>,
+      <&_masked_vph_lvl0>,
+      <&_masked_vph_lvl1>,
+      <&_masked_vph_lvl2>,
+      <&_masked_l_bcl_lvl0>,
+      <&_masked_l_bcl_lvl1>,
+      <&_masked_l_bcl_lvl2>,
+      <&_masked_dsi_sim_vid>,
+      <&_masked_dsi_sim_cmd>,
+      <&_masked_dsi_sim_dsc_375_cmd>,
+      <&_masked_dsi_dual_sim_vid>,
+      <&_masked_dsi_dual_sim_cmd>,
+      <&_masked_dsi_dual_sim_dsc_375_cmd>,
+      <&_masked_dsi_sim_sec_hd_cmd>,
+      <&_masked_dsi_sharp_4k_dsc_video>,
+      <&_masked_dsi_sharp_4k_dsc_cmd>,
+      <&_masked_dsi_dual_nt35597_truly_video>,
+      <&_masked_dsi_dual_nt35597_truly_video_config0>,
+      <&_masked_dsi_dual_nt35597_truly_cmd>,
+      <&_masked_dsi_nt35597_truly_dsc_cmd>,
+      <&_masked_dsi_nt35597_truly_dsc_cmd_config2>,
+      <&_masked_dsi_nt35597_truly_dsc_video>,
+      <&_masked_dsi_nt35597_truly_dsc_video_config2>,
+      <&_masked_dsi_nt36860_dsc_video>,
+      <&_masked_dsi_nt36860_dsc_cmd>,
+      <&_masked_dsi_nt35695b_truly_fhd_video>,
+      <&_masked_dsi_nt35695b_truly_fhd_cmd>,
+      <&_masked_dsi_sharp_1080_cmd>,
+      <&_masked_dsi_dual_sharp_1080_120hz_cmd>,
+      <&_masked_dsi_dual_s6e3ha3_amoled_cmd>,
+      <&_masked_dsi_sw43404_amoled_cmd>,
+      <&_masked_dsi_ss_notch_fhd_ea8074_cmd>,
+      <&_masked_dsi_sw43404_amoled_video>,
+      <&_masked_dsi_sw43404_amoled_fhd_plus_cmd>,
+      <&_masked_dsi_samsung_fhd_ea8076_cmd>,
+      <&_masked_dsi_samsung_fhd_ea8076_f1_cmd>,
+      <&_masked_dsi_samsung_fhd_ea8076_f1p2_cmd>,
+      <&_masked_dsi_samsung_fhd_ea8076_f1p2_2_cmd>,
+      <&_masked_dsi_samsung_fhd_ea8076_f1mp_cmd>,
+      <&_masked_dsi_tianma_fhd_nt36672a_video>,
+      <&_masked_dsi_dual_nt36850_truly_cmd>,
+      <&_masked_dsi_rm69299_visionox_amoled_video>,
+      <&_masked_dsi_ss_fhd_ea8076_cmd>,
+      <&_masked_dsi_ss_fhd_ea8076_global_cmd>,
+      <&_masked_dsi_visionox_fhd_r66456_f11_cmd>,
+      <&_masked_dsi_samsung_fhd_ea8076_f1s_cmd>,
+      <&_masked_dsi_j2a_38_0c_0a_dsc_cmd>,
+      <&_masked_dsi_j2a_42_02_0b_dsc_cmd>,
+      <&_masked_dsi_j20s_36_02_0a_video>,
+      <&_masked_dsi_j20s_42_02_0b_video>,
+      <&_masked_dsi_k82_42_02_0a_dual_cphy_video>,
+      <&_masked_dsi_k82_36_02_0b_dual_cphy_video>,
+      <&_masked_dsi_panel_pwr_supply>,
+      <&_masked_dsi_panel_pwr_supply_no_labibb>,
+      <&_masked_dsi_panel_pwr_supply_vdd_no_labibb>,
+      <&_masked_dsi_panel_pwr_supply_vdd_labibb>,
+      <&_masked_dsi_amoled_panel_pwr_supply>,
+      <&_masked_dsi_amoled_panel_pwr_external_supply>,
+      <&_masked_dsi_panel_pwr_supply_k82_vddio>,
+      <&_masked_dsi_sharp_4k_dsc_video_display>,
+      <&_masked_dsi_sharp_4k_dsc_cmd_display>,
+      <&_masked_dsi_sharp_1080_cmd_display>,
+      <&_masked_dsi_dual_sharp_1080_120hz_cmd_display>,
+      <&_masked_dsi_dual_nt35597_truly_video_display>,
+      <&_masked_dsi_dual_nt35597_truly_cmd_display>,
+      <&_masked_dsi_nt35597_truly_dsc_cmd_display>,
+      <&_masked_dsi_nt35597_truly_dsc_video_display>,
+      <&_masked_dsi_sim_vid_display>,
+      <&_masked_dsi_dual_sim_vid_display>,
+      <&_masked_dsi_sim_cmd_display>,
+      <&_masked_dsi_dual_sim_cmd_display>,
+      <&_masked_dsi_sim_dsc_375_cmd_display>,
+      <&_masked_dsi_dual_sim_dsc_375_cmd_display>,
+      <&_masked_dsi_sw43404_amoled_cmd_display>,
+      <&_masked_dsi_nt35695b_truly_fhd_cmd_display>,
+      <&_masked_dsi_nt35695b_truly_fhd_video_display>,
+      <&_masked_dsi_sw43404_amoled_video_display>,
+      <&_masked_dsi_sw43404_amoled_fhd_plus_cmd_display>,
+      <&_masked_dsi_ss_ea8074_fhd_cmd_display>,
+      <&_masked_dsi_samsung_fhd_ea8076_cmd_display>,
+      <&_masked_dsi_samsung_fhd_ea8076_f1_cmd_display>,
+      <&_masked_dsi_samsung_fhd_ea8076_f1mp_cmd_display>,
+      <&_masked_dsi_samsung_fhd_ea8076_f1p2_2_cmd_display>,
+      <&_masked_dsi_samsung_fhd_ea8076_f1p2_cmd_display>,
+      <&_masked_dsi_tianma_fhd_nt36672a_video_display>,
+      <&_masked_dsi_dual_nt36850_truly_cmd_display>,
+      <&_masked_dsi_nt35695b_truly_fhd_cmd_sec_display>,
+      <&_masked_dsi_nt35695b_truly_fhd_video_sec_display>,
+      <&_masked_dsi_sim_sec_hd_cmd_display>,
+      <&_masked_dsi_ss_fhd_ea8076_cmd_display>,
+      <&_masked_dsi_visionox_fhd_r66456_f11_cmd_display>,
+      <&_masked_dsi_ss_fhd_ea8076_global_cmd_display>,
+      <&_masked_dsi_samsung_fhd_ea8076_f1s_cmd_display>,
+      <&_masked_dsi_j2a_38_0c_0a_dsc_cmd_display>,
+      <&_masked_dsi_j2a_42_02_0b_dsc_cmd_display>,
+      <&_masked_dsi_j20s_36_02_0a_video_display>,
+      <&_masked_dsi_j20s_42_02_0b_video_display>,
+      <&_masked_dsi_rm69299_visionox_amoled_vid_display>,
+      <&_masked_dsi_k82_42_02_0a_dual_cphy_vid_display>,
+      <&_masked_dsi_nt36860_dsc_video_display>,
+      <&_masked_dsi_nt36860_dsc_cmd_display>,
+      <&_masked_dsi_k82_36_02_0b_dual_cphy_vid_display>,
+      <&_masked_sde_dsi>,
+      <&_masked_sde_dsi1>,
+      <&_masked_sde_wb>,
+      <&_masked_ext_disp>,
+      <&_masked_ext_disp_audio_codec>,
+      <&_masked_bluetooth>,
+      <&_masked_extcon_usb1>,
+      <&_masked_ext_5v_boost>,
+      <&_masked_wdog>,
+      <&_masked_ramdump_fb_mem>,
+      <&_masked_led_flash_rear>,
+      <&_masked_actuator_rear_regulator>,
+      <&_masked_camera_wide_vdig_ldo>,
+      <&_masked_camera_front_vdig_ldo>,
+      <&_masked_actuator_rear>,
+      <&_masked_eeprom_rear>,
+      <&_masked_eeprom_front>,
+      <&_masked_smb1390>,
+      <&_masked_smb1390_revid>,
+      <&_masked_smb1390_charger>,
+      <&_masked_smb1390_slave>,
+      <&_masked_smb1390_slave_charger>,
+      <&_masked_idtp9418>,
+      <&_masked_ipa_hw>,
+      <&_masked_onewire_gpio>,
+      <&_masked_onewire_slave_gpio>,
+      <&_masked_nabu_batterydata>,
+      <&_masked_maxim_ds28e16>,
+      <&_masked_maxim_ds28e16_slave>,
+      <&_masked_touch_vddio_vreg>,
+      <&_masked_vdd_boost_vreg>,
+      <&_masked_display_panel_enp>,
+      <&_masked_display_panel_enn>,
+      <&_masked_ts_int_active>,
+      <&_masked_ts_cs_active>,
+      <&_masked_ts_cs_suspend>,
+      <&_masked_ssc_sensors>,
+      <&_masked_thermal_message>,
+      <&_masked_msm_gpio_37>,
+      <&_masked_msm_gpio_37_output_high>,
+      <&_masked_msm_gpio_120>,
+      <&_masked_tavil_wcd>,
+      <&_masked_us_euro_sw_active>,
+      <&_masked_us_euro_sw_sleep>,
+      <&_masked_spk_1_wcd_en_active>,
+      <&_masked_spk_1_wcd_en_sleep>,
+      <&_masked_spk_2_wcd_en_active>,
+      <&_masked_spk_2_wcd_en_sleep>,
+      <&_masked_hph_en0_wcd_active>,
+      <&_masked_hph_en0_wcd_sleep>,
+      <&_masked_hph_en1_wcd_active>,
+      <&_masked_hph_en1_wcd_sleep>,
+      <&_masked_wsa_spk_wcd_sd1>,
+      <&_masked_wsa_spk_wcd_sd2>,
+      <&_masked_tavil_us_euro_switch>,
+      <&_masked_tavil_hph_en0>,
+      <&_masked_tavil_hph_en1>,
+      <&_masked_wcd>,
+      <&_masked_spkr_1_wcd_en_active>,
+      <&_masked_spkr_1_wcd_en_sleep>,
+      <&_masked_spkr_2_wcd_en_active>,
+      <&_masked_spkr_2_wcd_en_sleep>,
+      <&_masked_wsa_spkr_wcd_sd1>,
+      <&_masked_wsa_spkr_wcd_sd2>,
+      <&_masked_wsa881x_0211>,
+      <&_masked_wsa881x_0212>,
+      <&_masked_wsa881x_0213>,
+      <&_masked_wsa881x_0214>,
+      <&_masked_wsa881x_70211>,
+      <&_masked_wsa881x_70212>,
+      <&_masked_wsa881x_70213>,
+      <&_masked_wsa881x_70214>,
+      <&_masked_wcd9xxx_intc>,
+      <&_masked_clock_audio>,
+      <&_masked_wcd_rst_gpio>,
+      <&_masked_pahu_wdsp>,
+      <&_masked_tavil_wdsp>,
+      <&_masked_clock_audio_lnbb>,
+      <&_masked_wcd9360_cdc>,
+      <&_masked_wcd_spi_0>,
+      <&_masked_wcd934x_cdc>,
+      <&_masked_tavil_spi_0>,
+      <&_masked_aqt1000_cdc>;
+
+    _masked_display_panel_enp_default: display_panel_enp_default {};
+    _masked_display_panel_enn_default: display_panel_enn_default {};
+    _masked_qupv3_se18_spi_pins: qupv3_se18_spi_pins {};
+    _masked_qupv3_se18_spi_active: qupv3_se18_spi_active {};
+    _masked_qupv3_se18_spi_sleep: qupv3_se18_spi_sleep {};
+    _masked_bq2597x_master_int_default: bq2597x_master_int_default {};
+    _masked_bq2597x_master_int_suspend: bq2597x_master_int_suspend {};
+    _masked_onewire_gpio_active: onewire_gpio_active {};
+    _masked_onewire_gpio_sleep: onewire_gpio_sleep {};
+    _masked_onewire_gpio_slave_active: onewire_gpio_slave_active {};
+    _masked_onewire_gpio_slave_sleep: onewire_gpio_slave_sleep {};
+    _masked_ts_active: ts_active {};
+    _masked_ts_int_suspend: ts_int_suspend {};
+    _masked_ts_reset_suspend: ts_reset_suspend {};
+    _masked_adc2_switch_gpio_idle: adc2_switch_gpio_idle {};
+    _masked_adc2_switch_gpio_active: adc2_switch_gpio_active {};
+    _masked_hall_intr3_active: hall_intr3_active {};
+    _masked_hall_intr3_suspend: hall_intr3_suspend {};
+    _masked_hall_intr4_active: hall_intr4_active {};
+    _masked_hall_intr4_suspend: hall_intr4_suspend {};
+    _masked_idt_int_active: idt_int_active {};
+    _masked_idt_int_suspend: idt_int_suspend {};
+    _masked_txon_enable_active: txon_enable_active {};
+    _masked_txon_enable_suspend: txon_enable_suspend {};
+    _masked_power_good_active: power_good_active {};
+    _masked_power_good_suspend: power_good_suspend {};
+    _masked_reverse_booset_enable_active: reverse_booset_enable_active {};
+    _masked_reverse_booset_enable_suspend: reverse_booset_enable_suspend {};
+    _masked_sbu_uart_en_idle: sbu_uart_en_idle {};
+    _masked_sbu_uart_en_active: sbu_uart_en_active {};
+    _masked_pcie1_wake_default: pcie1_wake_default {};
+    _masked_nfc_int_active: nfc_int_active {};
+    _masked_nfc_int_suspend: nfc_int_suspend {};
+    _masked_nfc_enable_active: nfc_enable_active {};
+    _masked_nfc_enable_suspend: nfc_enable_suspend {};
+    _masked_nfc_clk_req_active: nfc_clk_req_active {};
+    _masked_nfc_clk_req_suspend: nfc_clk_req_suspend {};
+    _masked_cam_sensor_active_macro: cam_sensor_active_macro {};
+    _masked_cam_sensor_suspend_macro: cam_sensor_suspend_macro {};
+    _masked_ant_sub_ctrl_irq: ant_sub_ctrl_irq {};
+    _masked_ant_top_ctrl_irq: ant_top_ctrl_irq {};
+    _masked_xiaomi_keyboard_suspend: xiaomi_keyboard_suspend {};
+    _masked_xiaomi_keyboard_active: xiaomi_keyboard_active {};
+    _masked_pm8150_tz: pm8150_tz {};
+    _masked_pm8150_clkdiv: pm8150_clkdiv {};
+    _masked_pm8150_rtc: pm8150_rtc {};
+    _masked_pm8150_gpios: pm8150_gpios {};
+    _masked_key_home_default: key_home_default {};
+    _masked_key_vol_up_default: key_vol_up_default {};
+    _masked_usb2_vbus_boost_default: usb2_vbus_boost_default {};
+    _masked_usb2_vbus_det_default: usb2_vbus_det_default {};
+    _masked_pm8150_sdam_2: pm8150_sdam_2 {};
+    _masked_pm8150_vadc: pm8150_vadc {};
+    _masked_pm8150_adc_tm: pm8150_adc_tm {};
+    _masked_pm8150_temp_alarm: pm8150_temp_alarm {};
+    _masked_pm8150_trip0: pm8150_trip0 {};
+    _masked_pm8150_trip1: pm8150_trip1 {};
+    _masked_pm8150b_revid: pm8150b_revid {};
+    _masked_pm8150b_tz: pm8150b_tz {};
+    _masked_pm8150b_clkdiv: pm8150b_clkdiv {};
+    _masked_pm8150b_pbs1: pm8150b_pbs1 {};
+    _masked_pm8150b_qnovo: pm8150b_qnovo {};
+    _masked_pm8150b_gpios: pm8150b_gpios {};
+    _masked_smb_stat_default: smb_stat_default {};
+    _masked_qnovo_fet_ctrl_state1: qnovo_fet_ctrl_state1 {};
+    _masked_qnovo_fet_ctrl_state2: qnovo_fet_ctrl_state2 {};
+    _masked_otg_vbus_boost_default: otg_vbus_boost_default {};
+    _masked_power_good_default: power_good_default {};
+    _masked_pm8150b_vadc: pm8150b_vadc {};
+    _masked_pm8150b_adc_tm: pm8150b_adc_tm {};
+    _masked_pm8150b_charger: pm8150b_charger {};
+    _masked_smb5_vconn: smb5_vconn {};
+    _masked_smb5_vbus: smb5_vbus {};
+    _masked_pm8150b_pdphy: pm8150b_pdphy {};
+    _masked_pm8150b_bcl: pm8150b_bcl {};
+    _masked_bcl_soc: bcl_soc {};
+    _masked_pm8150b_fg: pm8150b_fg {};
+    _masked_pm8150b_pwm: pm8150b_pwm {};
+    _masked_pm8150b_hr_led: pm8150b_hr_led {};
+    _masked_pm8150b_haptics: pm8150b_haptics {};
+    _masked_pm8150b_temp_alarm: pm8150b_temp_alarm {};
+    _masked_pm8150b_trip0: pm8150b_trip0 {};
+    _masked_pm8150b_trip1: pm8150b_trip1 {};
+    _masked_ibat_lvl0: ibat_lvl0 {};
+    _masked_ibat_lvl1: ibat_lvl1 {};
+    _masked_vbat_lvl0: vbat_lvl0 {};
+    _masked_vbat_lvl1: vbat_lvl1 {};
+    _masked_vbat_lvl2: vbat_lvl2 {};
+    _masked_b_bcl_lvl0: b_bcl_lvl0 {};
+    _masked_b_bcl_lvl1: b_bcl_lvl1 {};
+    _masked_b_bcl_lvl2: b_bcl_lvl2 {};
+    _masked_soc_trip: soc_trip {};
+    _masked_pm8150l_revid: pm8150l_revid {};
+    _masked_pm8150l_tz: pm8150l_tz {};
+    _masked_pm8150l_clkdiv: pm8150l_clkdiv {};
+    _masked_pm8150l_gpios: pm8150l_gpios {};
+    _masked_cam_sensor_eldo4_default: cam_sensor_eldo4_default {};
+    _masked_cam_sensor_eldo3_default: cam_sensor_eldo3_default {};
+    _masked_pm8150l_backlight_therm_default: pm8150l_backlight_therm_default {};
+    _masked_cam_sensor_wide_vdig_enable: cam_sensor_wide_vdig_enable {};
+    _masked_cam_sensor_wide_vdig_disable: cam_sensor_wide_vdig_disable {};
+    _masked_pm8150l_vadc: pm8150l_vadc {};
+    _masked_pm8150l_bcl: pm8150l_bcl {};
+    _masked_pm8150l_adc_tm: pm8150l_adc_tm {};
+    _masked_pm8150l_lcdb: pm8150l_lcdb {};
+    _masked_lcdb_ldo_vreg: lcdb_ldo_vreg {};
+    _masked_lcdb_ncp_vreg: lcdb_ncp_vreg {};
+    _masked_lcdb_bst_vreg: lcdb_bst_vreg {};
+    _masked_flash_led: flash_led {};
+    _masked_pm8150l_flash0: pm8150l_flash0 {};
+    _masked_pm8150l_flash1: pm8150l_flash1 {};
+    _masked_pm8150l_flash2: pm8150l_flash2 {};
+    _masked_pm8150l_torch0: pm8150l_torch0 {};
+    _masked_pm8150l_torch1: pm8150l_torch1 {};
+    _masked_pm8150l_torch2: pm8150l_torch2 {};
+    _masked_pm8150l_switch0: pm8150l_switch0 {};
+    _masked_pm8150l_switch1: pm8150l_switch1 {};
+    _masked_pm8150l_switch2: pm8150l_switch2 {};
+    _masked_pm8150l_flashlight: pm8150l_flashlight {};
+    _masked_pm8150l_wled: pm8150l_wled {};
+    _masked_wled_flash: wled_flash {};
+    _masked_wled_torch: wled_torch {};
+    _masked_wled_switch: wled_switch {};
+    _masked_pm8150l_lpg: pm8150l_lpg {};
+    _masked_pwm_lpg1: pwm_lpg1 {};
+    _masked_pwm_lpg2: pwm_lpg2 {};
+    _masked_pwm_lpg3: pwm_lpg3 {};
+    _masked_pm8150l_pwm: pm8150l_pwm {};
+    _masked_pm8150l_rgb_led: pm8150l_rgb_led {};
+    _masked_red_led: red_led {};
+    _masked_green_led: green_led {};
+    _masked_blue_led: blue_led {};
+    _masked_pm8150a_amoled: pm8150a_amoled {};
+    _masked_oledb_vreg: oledb_vreg {};
+    _masked_ab_vreg: ab_vreg {};
+    _masked_ibb_vreg: ibb_vreg {};
+    _masked_pm8150l_temp_alarm: pm8150l_temp_alarm {};
+    _masked_vph_lvl0: vph_lvl0 {};
+    _masked_vph_lvl1: vph_lvl1 {};
+    _masked_vph_lvl2: vph_lvl2 {};
+    _masked_l_bcl_lvl0: l_bcl_lvl0 {};
+    _masked_l_bcl_lvl1: l_bcl_lvl1 {};
+    _masked_l_bcl_lvl2: l_bcl_lvl2 {};
+    _masked_dsi_sim_vid: dsi_sim_vid {};
+    _masked_dsi_sim_cmd: dsi_sim_cmd {};
+    _masked_dsi_sim_dsc_375_cmd: dsi_sim_dsc_375_cmd {};
+    _masked_dsi_dual_sim_vid: dsi_dual_sim_vid {};
+    _masked_dsi_dual_sim_cmd: dsi_dual_sim_cmd {};
+    _masked_dsi_dual_sim_dsc_375_cmd: dsi_dual_sim_dsc_375_cmd {};
+    _masked_dsi_sim_sec_hd_cmd: dsi_sim_sec_hd_cmd {};
+    _masked_dsi_sharp_4k_dsc_video: dsi_sharp_4k_dsc_video {};
+    _masked_dsi_sharp_4k_dsc_cmd: dsi_sharp_4k_dsc_cmd {};
+    _masked_dsi_dual_nt35597_truly_video: dsi_dual_nt35597_truly_video {};
+    _masked_dsi_dual_nt35597_truly_video_config0: dsi_dual_nt35597_truly_video_config0 {};
+    _masked_dsi_dual_nt35597_truly_cmd: dsi_dual_nt35597_truly_cmd {};
+    _masked_dsi_nt35597_truly_dsc_cmd: dsi_nt35597_truly_dsc_cmd {};
+    _masked_dsi_nt35597_truly_dsc_cmd_config2: dsi_nt35597_truly_dsc_cmd_config2 {};
+    _masked_dsi_nt35597_truly_dsc_video: dsi_nt35597_truly_dsc_video {};
+    _masked_dsi_nt35597_truly_dsc_video_config2: dsi_nt35597_truly_dsc_video_config2 {};
+    _masked_dsi_nt36860_dsc_video: dsi_nt36860_dsc_video {};
+    _masked_dsi_nt36860_dsc_cmd: dsi_nt36860_dsc_cmd {};
+    _masked_dsi_nt35695b_truly_fhd_video: dsi_nt35695b_truly_fhd_video {};
+    _masked_dsi_nt35695b_truly_fhd_cmd: dsi_nt35695b_truly_fhd_cmd {};
+    _masked_dsi_sharp_1080_cmd: dsi_sharp_1080_cmd {};
+    _masked_dsi_dual_sharp_1080_120hz_cmd: dsi_dual_sharp_1080_120hz_cmd {};
+    _masked_dsi_dual_s6e3ha3_amoled_cmd: dsi_dual_s6e3ha3_amoled_cmd {};
+    _masked_dsi_sw43404_amoled_cmd: dsi_sw43404_amoled_cmd {};
+    _masked_dsi_ss_notch_fhd_ea8074_cmd: dsi_ss_notch_fhd_ea8074_cmd {};
+    _masked_dsi_sw43404_amoled_video: dsi_sw43404_amoled_video {};
+    _masked_dsi_sw43404_amoled_fhd_plus_cmd: dsi_sw43404_amoled_fhd_plus_cmd {};
+    _masked_dsi_samsung_fhd_ea8076_cmd: dsi_samsung_fhd_ea8076_cmd {};
+    _masked_dsi_samsung_fhd_ea8076_f1_cmd: dsi_samsung_fhd_ea8076_f1_cmd {};
+    _masked_dsi_samsung_fhd_ea8076_f1p2_cmd: dsi_samsung_fhd_ea8076_f1p2_cmd {};
+    _masked_dsi_samsung_fhd_ea8076_f1p2_2_cmd: dsi_samsung_fhd_ea8076_f1p2_2_cmd {};
+    _masked_dsi_samsung_fhd_ea8076_f1mp_cmd: dsi_samsung_fhd_ea8076_f1mp_cmd {};
+    _masked_dsi_tianma_fhd_nt36672a_video: dsi_tianma_fhd_nt36672a_video {};
+    _masked_dsi_dual_nt36850_truly_cmd: dsi_dual_nt36850_truly_cmd {};
+    _masked_dsi_rm69299_visionox_amoled_video: dsi_rm69299_visionox_amoled_video {};
+    _masked_dsi_ss_fhd_ea8076_cmd: dsi_ss_fhd_ea8076_cmd {};
+    _masked_dsi_ss_fhd_ea8076_global_cmd: dsi_ss_fhd_ea8076_global_cmd {};
+    _masked_dsi_visionox_fhd_r66456_f11_cmd: dsi_visionox_fhd_r66456_f11_cmd {};
+    _masked_dsi_samsung_fhd_ea8076_f1s_cmd: dsi_samsung_fhd_ea8076_f1s_cmd {};
+    _masked_dsi_j2a_38_0c_0a_dsc_cmd: dsi_j2a_38_0c_0a_dsc_cmd {};
+    _masked_dsi_j2a_42_02_0b_dsc_cmd: dsi_j2a_42_02_0b_dsc_cmd {};
+    _masked_dsi_j20s_36_02_0a_video: dsi_j20s_36_02_0a_video {};
+    _masked_dsi_j20s_42_02_0b_video: dsi_j20s_42_02_0b_video {};
+    _masked_dsi_k82_42_02_0a_dual_cphy_video: dsi_k82_42_02_0a_dual_cphy_video {};
+    _masked_dsi_k82_36_02_0b_dual_cphy_video: dsi_k82_36_02_0b_dual_cphy_video {};
+    _masked_dsi_panel_pwr_supply: dsi_panel_pwr_supply {};
+    _masked_dsi_panel_pwr_supply_no_labibb: dsi_panel_pwr_supply_no_labibb {};
+    _masked_dsi_panel_pwr_supply_vdd_no_labibb: dsi_panel_pwr_supply_vdd_no_labibb {};
+    _masked_dsi_panel_pwr_supply_vdd_labibb: dsi_panel_pwr_supply_vdd_labibb {};
+    _masked_dsi_amoled_panel_pwr_supply: dsi_amoled_panel_pwr_supply {};
+    _masked_dsi_amoled_panel_pwr_external_supply: dsi_amoled_panel_pwr_external_supply {};
+    _masked_dsi_panel_pwr_supply_k82_vddio: dsi_panel_pwr_supply_k82_vddio {};
+    _masked_dsi_sharp_4k_dsc_video_display: dsi_sharp_4k_dsc_video_display {};
+    _masked_dsi_sharp_4k_dsc_cmd_display: dsi_sharp_4k_dsc_cmd_display {};
+    _masked_dsi_sharp_1080_cmd_display: dsi_sharp_1080_cmd_display {};
+    _masked_dsi_dual_sharp_1080_120hz_cmd_display: dsi_dual_sharp_1080_120hz_cmd_display {};
+    _masked_dsi_dual_nt35597_truly_video_display: dsi_dual_nt35597_truly_video_display {};
+    _masked_dsi_dual_nt35597_truly_cmd_display: dsi_dual_nt35597_truly_cmd_display {};
+    _masked_dsi_nt35597_truly_dsc_cmd_display: dsi_nt35597_truly_dsc_cmd_display {};
+    _masked_dsi_nt35597_truly_dsc_video_display: dsi_nt35597_truly_dsc_video_display {};
+    _masked_dsi_sim_vid_display: dsi_sim_vid_display {};
+    _masked_dsi_dual_sim_vid_display: dsi_dual_sim_vid_display {};
+    _masked_dsi_sim_cmd_display: dsi_sim_cmd_display {};
+    _masked_dsi_dual_sim_cmd_display: dsi_dual_sim_cmd_display {};
+    _masked_dsi_sim_dsc_375_cmd_display: dsi_sim_dsc_375_cmd_display {};
+    _masked_dsi_dual_sim_dsc_375_cmd_display: dsi_dual_sim_dsc_375_cmd_display {};
+    _masked_dsi_sw43404_amoled_cmd_display: dsi_sw43404_amoled_cmd_display {};
+    _masked_dsi_nt35695b_truly_fhd_cmd_display: dsi_nt35695b_truly_fhd_cmd_display {};
+    _masked_dsi_nt35695b_truly_fhd_video_display: dsi_nt35695b_truly_fhd_video_display {};
+    _masked_dsi_sw43404_amoled_video_display: dsi_sw43404_amoled_video_display {};
+    _masked_dsi_sw43404_amoled_fhd_plus_cmd_display: dsi_sw43404_amoled_fhd_plus_cmd_display {};
+    _masked_dsi_ss_ea8074_fhd_cmd_display: dsi_ss_ea8074_fhd_cmd_display {};
+    _masked_dsi_samsung_fhd_ea8076_cmd_display: dsi_samsung_fhd_ea8076_cmd_display {};
+    _masked_dsi_samsung_fhd_ea8076_f1_cmd_display: dsi_samsung_fhd_ea8076_f1_cmd_display {};
+    _masked_dsi_samsung_fhd_ea8076_f1mp_cmd_display: dsi_samsung_fhd_ea8076_f1mp_cmd_display {};
+    _masked_dsi_samsung_fhd_ea8076_f1p2_2_cmd_display: dsi_samsung_fhd_ea8076_f1p2_2_cmd_display {};
+    _masked_dsi_samsung_fhd_ea8076_f1p2_cmd_display: dsi_samsung_fhd_ea8076_f1p2_cmd_display {};
+    _masked_dsi_tianma_fhd_nt36672a_video_display: dsi_tianma_fhd_nt36672a_video_display {};
+    _masked_dsi_dual_nt36850_truly_cmd_display: dsi_dual_nt36850_truly_cmd_display {};
+    _masked_dsi_nt35695b_truly_fhd_cmd_sec_display: dsi_nt35695b_truly_fhd_cmd_sec_display {};
+    _masked_dsi_nt35695b_truly_fhd_video_sec_display: dsi_nt35695b_truly_fhd_video_sec_display {};
+    _masked_dsi_sim_sec_hd_cmd_display: dsi_sim_sec_hd_cmd_display {};
+    _masked_dsi_ss_fhd_ea8076_cmd_display: dsi_ss_fhd_ea8076_cmd_display {};
+    _masked_dsi_visionox_fhd_r66456_f11_cmd_display: dsi_visionox_fhd_r66456_f11_cmd_display {};
+    _masked_dsi_ss_fhd_ea8076_global_cmd_display: dsi_ss_fhd_ea8076_global_cmd_display {};
+    _masked_dsi_samsung_fhd_ea8076_f1s_cmd_display: dsi_samsung_fhd_ea8076_f1s_cmd_display {};
+    _masked_dsi_j2a_38_0c_0a_dsc_cmd_display: dsi_j2a_38_0c_0a_dsc_cmd_display {};
+    _masked_dsi_j2a_42_02_0b_dsc_cmd_display: dsi_j2a_42_02_0b_dsc_cmd_display {};
+    _masked_dsi_j20s_36_02_0a_video_display: dsi_j20s_36_02_0a_video_display {};
+    _masked_dsi_j20s_42_02_0b_video_display: dsi_j20s_42_02_0b_video_display {};
+    _masked_dsi_rm69299_visionox_amoled_vid_display: dsi_rm69299_visionox_amoled_vid_display {};
+    _masked_dsi_k82_42_02_0a_dual_cphy_vid_display: dsi_k82_42_02_0a_dual_cphy_vid_display {};
+    _masked_dsi_nt36860_dsc_video_display: dsi_nt36860_dsc_video_display {};
+    _masked_dsi_nt36860_dsc_cmd_display: dsi_nt36860_dsc_cmd_display {};
+    _masked_dsi_k82_36_02_0b_dual_cphy_vid_display: dsi_k82_36_02_0b_dual_cphy_vid_display {};
+    _masked_sde_dsi: sde_dsi {};
+    _masked_sde_dsi1: sde_dsi1 {};
+    _masked_sde_wb: sde_wb {};
+    _masked_ext_disp: ext_disp {};
+    _masked_ext_disp_audio_codec: ext_disp_audio_codec {};
+    _masked_bluetooth: bluetooth {};
+    _masked_extcon_usb1: extcon_usb1 {};
+    _masked_ext_5v_boost: ext_5v_boost {};
+    _masked_wdog: wdog {};
+    _masked_ramdump_fb_mem: ramdump_fb_mem {};
+    _masked_led_flash_rear: led_flash_rear {};
+    _masked_actuator_rear_regulator: actuator_rear_regulator {};
+    _masked_camera_wide_vdig_ldo: camera_wide_vdig_ldo {};
+    _masked_camera_front_vdig_ldo: camera_front_vdig_ldo {};
+    _masked_actuator_rear: actuator_rear {};
+    _masked_eeprom_rear: eeprom_rear {};
+    _masked_eeprom_front: eeprom_front {};
+    _masked_smb1390: smb1390 {};
+    _masked_smb1390_revid: smb1390_revid {};
+    _masked_smb1390_charger: smb1390_charger {};
+    _masked_smb1390_slave: smb1390_slave {};
+    _masked_smb1390_slave_charger: smb1390_slave_charger {};
+    _masked_idtp9418: idtp9418 {};
+    _masked_ipa_hw: ipa_hw {};
+    _masked_onewire_gpio: onewire_gpio {};
+    _masked_onewire_slave_gpio: onewire_slave_gpio {};
+    _masked_nabu_batterydata: nabu_batterydata {};
+    _masked_maxim_ds28e16: maxim_ds28e16 {};
+    _masked_maxim_ds28e16_slave: maxim_ds28e16_slave {};
+    _masked_touch_vddio_vreg: touch_vddio_vreg {};
+    _masked_vdd_boost_vreg: vdd_boost_vreg {};
+    _masked_display_panel_enp: display_panel_enp {};
+    _masked_display_panel_enn: display_panel_enn {};
+    _masked_ts_int_active: ts_int_active {};
+    _masked_ts_cs_active: ts_cs_active {};
+    _masked_ts_cs_suspend: ts_cs_suspend {};
+    _masked_ssc_sensors: ssc_sensors {};
+    _masked_thermal_message: thermal_message {};
+    _masked_msm_gpio_37: msm_gpio_37 {};
+    _masked_msm_gpio_37_output_high: msm_gpio_37_output_high {};
+    _masked_msm_gpio_120: msm_gpio_120 {};
+    _masked_tavil_wcd: tavil_wcd {};
+    _masked_us_euro_sw_active: us_euro_sw_active {};
+    _masked_us_euro_sw_sleep: us_euro_sw_sleep {};
+    _masked_spk_1_wcd_en_active: spk_1_wcd_en_active {};
+    _masked_spk_1_wcd_en_sleep: spk_1_wcd_en_sleep {};
+    _masked_spk_2_wcd_en_active: spk_2_wcd_en_active {};
+    _masked_spk_2_wcd_en_sleep: spk_2_wcd_en_sleep {};
+    _masked_hph_en0_wcd_active: hph_en0_wcd_active {};
+    _masked_hph_en0_wcd_sleep: hph_en0_wcd_sleep {};
+    _masked_hph_en1_wcd_active: hph_en1_wcd_active {};
+    _masked_hph_en1_wcd_sleep: hph_en1_wcd_sleep {};
+    _masked_wsa_spk_wcd_sd1: wsa_spk_wcd_sd1 {};
+    _masked_wsa_spk_wcd_sd2: wsa_spk_wcd_sd2 {};
+    _masked_tavil_us_euro_switch: tavil_us_euro_switch {};
+    _masked_tavil_hph_en0: tavil_hph_en0 {};
+    _masked_tavil_hph_en1: tavil_hph_en1 {};
+    _masked_wcd: wcd {};
+    _masked_spkr_1_wcd_en_active: spkr_1_wcd_en_active {};
+    _masked_spkr_1_wcd_en_sleep: spkr_1_wcd_en_sleep {};
+    _masked_spkr_2_wcd_en_active: spkr_2_wcd_en_active {};
+    _masked_spkr_2_wcd_en_sleep: spkr_2_wcd_en_sleep {};
+    _masked_wsa_spkr_wcd_sd1: wsa_spkr_wcd_sd1 {};
+    _masked_wsa_spkr_wcd_sd2: wsa_spkr_wcd_sd2 {};
+    _masked_wsa881x_0211: wsa881x_0211 {};
+    _masked_wsa881x_0212: wsa881x_0212 {};
+    _masked_wsa881x_0213: wsa881x_0213 {};
+    _masked_wsa881x_0214: wsa881x_0214 {};
+    _masked_wsa881x_70211: wsa881x_70211 {};
+    _masked_wsa881x_70212: wsa881x_70212 {};
+    _masked_wsa881x_70213: wsa881x_70213 {};
+    _masked_wsa881x_70214: wsa881x_70214 {};
+    _masked_wcd9xxx_intc: wcd9xxx_intc {};
+    _masked_clock_audio: clock_audio {};
+    _masked_wcd_rst_gpio: wcd_rst_gpio {};
+    _masked_pahu_wdsp: pahu_wdsp {};
+    _masked_tavil_wdsp: tavil_wdsp {};
+    _masked_clock_audio_lnbb: clock_audio_lnbb {};
+    _masked_wcd9360_cdc: wcd9360_cdc {};
+    _masked_wcd_spi_0: wcd_spi_0 {};
+    _masked_wcd934x_cdc: wcd934x_cdc {};
+    _masked_tavil_spi_0: tavil_spi_0 {};
+    _masked_aqt1000_cdc: aqt1000_cdc {};
+  };
+};
+
+
