@@ -29,10 +29,10 @@
 /delete-node/ &rmtfs_mem;
 
 / {
-	model = "Xiaomi Mi Pad 5";
+	model = "Xiaomi Pad 5";
 	compatible = "xiaomi,nabu", "qcom,sm8150";
 	chassis-type = "tablet";
-	qcom,msm-id = <339 0x20000>;
+  qcom,msm-id = <339 0x20002>;
 	qcom,board-id = <48 0>;
 
 	aliases {
@@ -209,8 +209,9 @@
 			gpios = <&tlmm 9 GPIO_ACTIVE_LOW>;
 			linux,input-type = <EV_SW>;
 			linux,code = <SW_LID>;
-			gpio-key,wakeup;
+			wakeup-source;
 			debounce-interval = <15>;
+      linux,can-disable;
 		};
 	};
 };
@@ -480,6 +481,10 @@
 
 &gpu {
 	status = "okay";
+  zap-shader {
+		memory-region = <&gpu_mem>;
+		firmware-name = "qcom/a640_zap.mbn";
+	};
 };
 
 &pon_pwrkey {
@@ -874,6 +879,7 @@
 		reg = <0>;
 
 		backlight = <&backlight>;
+    rotation = <90>;
 		reset-gpios = <&tlmm 6 GPIO_ACTIVE_LOW>;
 
 		vddio-supply = <&vreg_l14a_1p88>;
